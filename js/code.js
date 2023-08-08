@@ -259,8 +259,66 @@ $("#saveBtn9").on("click", function (event) {
 // setting color
 // =================================================================
 
-// var systemTime = dayjs().format("h");
-// var g1 = $("#getPTime1");
+var systemTime = dayjs().format("h");
+var g1 = $("#getPTime1").text();
+if (g1 == systemTime) {
+  getInput1.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g1 < systemTime) {
+  getInput1.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+} else {
+  getInput1.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+
+var g2 = $("#getPTime2").text();
+if (g2 == systemTime) {
+  getInput2.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g2 < systemTime) {
+  getInput2.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+var g3 = $("#getPTime3").text();
+if (g3 == systemTime) {
+  getInput3.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g3 < systemTime) {
+  getInput3.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+var g4 = $("#getPTime4").text();
+if (g4 == systemTime) {
+  getInput4.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g4 < systemTime) {
+  getInput4.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+var g5 = $("#getPTime5").text();
+if (g5 == systemTime) {
+  getInput5.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g5 < systemTime) {
+  getInput5.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+
+var g6 = $("#getPTime6").text();
+if (g6 == systemTime) {
+  getInput6.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g6 < systemTime) {
+  getInput6.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+var g7 = $("#getPTime7").text();
+if (g7 == systemTime) {
+  getInput7.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g7 < systemTime) {
+  getInput7.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+var g8 = $("#getPTime8").text();
+if (g8 == systemTime) {
+  getInput8.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g8 < systemTime) {
+  getInput8.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+var g9 = $("#getPTime9").text();
+if (g9 == systemTime) {
+  getInput9.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
+} else if (g9 < systemTime) {
+  getInput9.attr("style", "background-color:#cccccc;width: 100%; height: 50px");
+}
+
 // var g2 = $("#getPTime2");
 // var g3 = $("#getPTime3");
 // var g4 = $("#getPTime4");
@@ -279,9 +337,6 @@ $("#saveBtn9").on("click", function (event) {
 // var getPTime7 = g7.text();
 // var getPTime8 = g8.text();
 // var getPTime9 = g9.text();
-
-// console.log(getPTime1);
-// console.log(systemTime);
 
 // if (getPTime1 == systemTime) {
 //   getInput1.attr("style", "background-color:#ff6961;width: 100%; height: 50px");
