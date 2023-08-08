@@ -24,8 +24,6 @@ $("#saveBtn").on("click", function (event) {
   if (eventAdded.eventName === "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
-
     // set new submission
     localStorage.setItem("getInput", JSON.stringify(getInput1));
 
@@ -50,7 +48,7 @@ $("#saveBtn2").on("click", function (event) {
   if (eventAdded2.eventName2 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
+    // alert("Appointment Added to local Storage");
 
     // set new submission
     localStorage.setItem("getInput2", JSON.stringify(getInput2));
@@ -77,7 +75,7 @@ $("#saveBtn3").on("click", function (event) {
   if (eventAdded3.eventName3 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
+    // alert("Appointment Added to local Storage");
 
     // set new submission
     localStorage.setItem("getInput3", JSON.stringify(getInput3));
@@ -105,7 +103,7 @@ $("#saveBtn4").on("click", function (event) {
   if (eventAdded4.eventName4 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
+    // alert("Appointment Added to local Storage");
 
     // set new submission
     localStorage.setItem("getInput4", JSON.stringify(getInput4));
@@ -132,7 +130,7 @@ $("#saveBtn5").on("click", function (event) {
   if (eventAdded5.eventName5 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
+    // alert("Appointment Added to local Storage");
 
     // set new submission
     localStorage.setItem("getInput5", JSON.stringify(getInput5));
@@ -159,7 +157,7 @@ $("#saveBtn6").on("click", function (event) {
   if (eventAdded6.eventName6 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
+    // alert("Appointment Added to local Storage");
 
     // set new submission
     localStorage.setItem("getInput6", JSON.stringify(getInput6));
@@ -186,7 +184,7 @@ $("#saveBtn7").on("click", function (event) {
   if (eventAdded7.eventName7 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
+    // alert("Appointment Added to local Storage");
 
     // set new submission
     localStorage.setItem("getInput7", JSON.stringify(getInput7));
@@ -213,7 +211,7 @@ $("#saveBtn8").on("click", function (event) {
   if (eventAdded8.eventName8 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
+    // alert("Appointment Added to local Storage");
 
     // set new submission
     localStorage.setItem("getInput8", JSON.stringify(getInput8));
@@ -240,7 +238,7 @@ $("#saveBtn9").on("click", function (event) {
   if (eventAdded9.eventName9 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
-    alert("Appointment Added to local Storage");
+    // alert("Appointment Added to local Storage");
 
     // set new submission
     localStorage.setItem("getInput9", JSON.stringify(getInput9));
