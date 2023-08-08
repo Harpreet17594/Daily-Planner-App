@@ -41,9 +41,11 @@ This homework is graded based on the following criteria:
 ## Links
 
     Link to Deployed application
+    https://harpreet17594.github.io/Daily-Planner-App/
 
 
     Link to Github Application
+    https://github.com/Harpreet17594/Daily-Planner-App
 
 ## 4. Languages used
 
