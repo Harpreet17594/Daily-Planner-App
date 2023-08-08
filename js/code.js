@@ -1,4 +1,5 @@
 var currentDay = $("#currentDay");
+
 var getInput1 = $("#getInput1");
 var getInput2 = $("#getInput2");
 var getInput3 = $("#getInput3");
@@ -6,20 +7,19 @@ var getInput4 = $("#getInput4");
 var getInput5 = $("#getInput5");
 var getInput6 = $("#getInput6");
 var getInput7 = $("#getInput7");
-
-var saveBtn2 = $("#saveBtn2");
-var saveBtn4 = $("#saveBtn4");
+var getInput8 = $("#getInput8");
+var getInput9 = $("#getInput9");
 
 //set date
 currentDay.text(dayjs().format("dddd, MMMM D") + "th");
 var eventSaved = $("#eventSaved");
 
-var eventAdded = {
-  eventName: getInput1.val().trim(),
-};
 //save button code
 $("#saveBtn").on("click", function (event) {
   event.preventDefault();
+  var eventAdded = {
+    eventName: getInput1.val().trim(),
+  };
 
   if (eventAdded.eventName === "") {
     alert("First name cannot be blank to save appointment");
@@ -41,12 +41,12 @@ $("#saveBtn").on("click", function (event) {
 
 // button 2 code
 //============================================================================
-var eventAdded2 = {
-  eventName2: getInput2.val().trim(),
-};
-saveBtn2.on("click", function (event) {
-  event.preventDefault();
 
+$("#saveBtn2").on("click", function (event) {
+  event.preventDefault();
+  var eventAdded2 = {
+    eventName2: getInput2.val().trim(),
+  };
   if (eventAdded2.eventName2 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
@@ -68,12 +68,12 @@ saveBtn2.on("click", function (event) {
 
 // button 3 code
 //================================================================
-var eventAdded3 = {
-  eventName3: getInput3.val().trim(),
-};
+
 $("#saveBtn3").on("click", function (event) {
   event.preventDefault();
-
+  var eventAdded3 = {
+    eventName3: getInput3.val().trim(),
+  };
   if (eventAdded3.eventName3 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
@@ -96,22 +96,22 @@ $("#saveBtn3").on("click", function (event) {
 
 // button 4 code
 //================================================================
-var eventAdded4 = {
-  eventName4: getInput4.val().trim(),
-};
-saveBtn4.on("click", function (event) {
-  event.preventDefault();
 
+$("#saveBtn4").on("click", function (event) {
+  event.preventDefault();
+  var eventAdded4 = {
+    eventName4: getInput4.val().trim(),
+  };
   if (eventAdded4.eventName4 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
     alert("Appointment Added to local Storage");
 
     // set new submission
-    localStorage.setItem("getInput", JSON.stringify(getInput4));
+    localStorage.setItem("getInput4", JSON.stringify(getInput4));
 
     // get most recent submission
-    var enteredInputValue4 = JSON.parse(localStorage.getItem("getInput"));
+    var enteredInputValue4 = JSON.parse(localStorage.getItem("getInput4"));
     getInput4.text(enteredInputValue4);
     // getInput.attr("disabled", "disabled");
     eventSaved.text("Appointment Added to local Storage");
@@ -123,66 +123,66 @@ saveBtn4.on("click", function (event) {
 
 // button 5 code
 //================================================================
-var eventAdded4 = {
-  eventName4: getInput4.val().trim(),
-};
-saveBtn4.on("click", function (event) {
-  event.preventDefault();
 
-  if (eventAdded4.eventName4 == "") {
+$("#saveBtn5").on("click", function (event) {
+  event.preventDefault();
+  var eventAdded5 = {
+    eventName5: getInput5.val().trim(),
+  };
+  if (eventAdded5.eventName5 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
     alert("Appointment Added to local Storage");
 
     // set new submission
-    localStorage.setItem("getInput", JSON.stringify(getInput4));
+    localStorage.setItem("getInput5", JSON.stringify(getInput5));
 
     // get most recent submission
-    var enteredInputValue4 = JSON.parse(localStorage.getItem("getInput"));
-    getInput4.text(enteredInputValue4);
+    var enteredInputValue5 = JSON.parse(localStorage.getItem("getInput5"));
+    getInput5.text(enteredInputValue5);
     // getInput.attr("disabled", "disabled");
     eventSaved.text("Appointment Added to local Storage");
 
-    console.log(eventAdded4);
-    console.log("get input 4 : " + getInput4);
+    console.log(eventAdded5);
+    console.log("get input 5 : " + getInput5);
   }
 });
 
 // button 6 code
 //================================================================
-var eventAdded4 = {
-  eventName4: getInput4.val().trim(),
-};
-saveBtn4.on("click", function (event) {
-  event.preventDefault();
 
-  if (eventAdded4.eventName4 == "") {
+$("#saveBtn6").on("click", function (event) {
+  event.preventDefault();
+  var eventAdded6 = {
+    eventName6: getInput6.val().trim(),
+  };
+  if (eventAdded6.eventName6 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
     alert("Appointment Added to local Storage");
 
     // set new submission
-    localStorage.setItem("getInput", JSON.stringify(getInput4));
+    localStorage.setItem("getInput6", JSON.stringify(getInput6));
 
     // get most recent submission
-    var enteredInputValue4 = JSON.parse(localStorage.getItem("getInput"));
-    getInput4.text(enteredInputValue4);
+    var enteredInputValue6 = JSON.parse(localStorage.getItem("getInput6"));
+    getInput6.text(enteredInputValue6);
     // getInput.attr("disabled", "disabled");
     eventSaved.text("Appointment Added to local Storage");
 
-    console.log(eventAdded4);
-    console.log("get input 4 : " + getInput4);
+    console.log(eventAdded6);
+    console.log("get input 6 : " + getInput6);
   }
 });
 
 // button 7 code
 //================================================================
-var eventAdded7 = {
-  eventName7: getInput7.val().trim(),
-};
+
 $("#saveBtn7").on("click", function (event) {
   event.preventDefault();
-
+  var eventAdded7 = {
+    eventName7: getInput7.val().trim(),
+  };
   if (eventAdded7.eventName7 == "") {
     alert("First name cannot be blank to save appointment");
   } else {
@@ -199,6 +199,60 @@ $("#saveBtn7").on("click", function (event) {
 
     console.log(eventAdded7);
     console.log("get input 7 : " + getInput7);
+  }
+});
+
+// button 8 code
+//================================================================
+
+$("#saveBtn8").on("click", function (event) {
+  event.preventDefault();
+  var eventAdded8 = {
+    eventName8: getInput7.val().trim(),
+  };
+  if (eventAdded8.eventName8 == "") {
+    alert("First name cannot be blank to save appointment");
+  } else {
+    alert("Appointment Added to local Storage");
+
+    // set new submission
+    localStorage.setItem("getInput8", JSON.stringify(getInput8));
+
+    // get most recent submission
+    var enteredInputValue8 = JSON.parse(localStorage.getItem("getInput8"));
+    getInput8.text(enteredInputValue8);
+    // getInput.attr("disabled", "disabled");
+    eventSaved.text("Appointment Added to local Storage");
+
+    console.log(eventAdded8);
+    console.log("get input 8 : " + getInput8);
+  }
+});
+
+// button 9 code
+//================================================================
+
+$("#saveBtn9").on("click", function (event) {
+  event.preventDefault();
+  var eventAdded9 = {
+    eventName9: getInput9.val().trim(),
+  };
+  if (eventAdded9.eventName9 == "") {
+    alert("First name cannot be blank to save appointment");
+  } else {
+    alert("Appointment Added to local Storage");
+
+    // set new submission
+    localStorage.setItem("getInput9", JSON.stringify(getInput9));
+
+    // get most recent submission
+    var enteredInputValue9 = JSON.parse(localStorage.getItem("getInput9"));
+    getInput7.text(enteredInputValue9);
+    // getInput.attr("disabled", "disabled");
+    eventSaved.text("Appointment Added to local Storage");
+
+    console.log(eventAdded9);
+    console.log("get input 9 : " + getInput9);
   }
 });
 
